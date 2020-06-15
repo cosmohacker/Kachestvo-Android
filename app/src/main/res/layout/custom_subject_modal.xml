@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_modal_corners_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageButton
+        android:id="@+id/imgClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/close_modal" />
+
+    <TextView
+        android:id="@+id/txtSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Subject Title"
+        android:textColor="@color/text_colors_dark"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:background="@drawable/custom_edit_text_layout"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:textColorHint="@color/nav_view_dark"
+        android:textSize="16sp" />
+
+</LinearLayout>

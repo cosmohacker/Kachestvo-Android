@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_modal_corners_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageButton
+        android:id="@+id/imgClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/close_modal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Yorumunuz"
+        android:textColor="@color/text_colors_dark"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtOverviewNameSurname"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:background="@drawable/custom_edit_text_layout"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="text|textVisiblePassword"
+            android:maxLength="25"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/nav_view_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtNameSurnameCounter"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:gravity="end|center"
+            android:paddingRight="5dp"
+            android:text="25"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtOverviewComment"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edit_text_layout"
+            android:inputType="textMultiLine|textVisiblePassword"
+            android:lines="5"
+            android:enabled="false"
+            android:maxLength="350"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/nav_view_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtCommentCounter"
+            android:layout_width="300dp"
+            android:layout_height="105dp"
+            android:gravity="end|bottom"
+            android:paddingRight="5dp"
+            android:text="350"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/custom_modal_button_dark"
+            android:text="Sil" />
+
+</LinearLayout>

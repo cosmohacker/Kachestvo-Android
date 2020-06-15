@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="main_toolbar_dark">#121213</color>
+    <color name="fab_background_dark">#121213</color>
+    <color name="main_background_dark">#050505</color>
+    <color name="nav_header_main_dark">#121213</color>
+    <color name="nav_header_content_dark">#050505</color>
+    <color name="object_color_dark">#565758</color>
+    <color name="text_colors_dark">#565758</color>
+    <color name="nav_view_dark">#121213</color>
+    <color name="custom_modal_edit_text_dark">#303030</color>
+    <color name="custom_modal_button_dark">#303030</color>
+    <color name="open_title_dark">#000000</color>
+    <!---->
+
+    <!-- Login Colors -->
+    <color name="login_text_color">#9c915d</color>
+    <color name="login_hint_color">#C3BC99</color>
+    <color name="login_background">#191919</color>
+    <color name="login_snackbar_background">#282828</color>
+    <!---->
+
+</resources>

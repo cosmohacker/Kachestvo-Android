@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/groupBottom"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/homeAction"
+            android:icon="@drawable/ic_home_dark"
+            android:title="@string/tab_name_anasayfa" />
+        <item
+            android:id="@+id/aboutAction"
+            android:icon="@drawable/ic_info_dark"
+            android:title="@string/tab_name_hakkimizda" />
+
+        <item
+            android:id="@+id/extraAction"
+            android:icon="@drawable/ic_plus_dark"
+            android:title="@string/tab_name_extra" />
+
+        <item
+            android:id="@+id/contactAction"
+            android:icon="@drawable/ic_contact_dark"
+            android:title="@string/tab_name_iletisim" />
+
+        <item
+            android:id="@+id/commentAction"
+            android:icon="@drawable/ic_comment_dark"
+            android:title="@string/tab_name_yorum" />
+
+    </group>
+
+</menu>

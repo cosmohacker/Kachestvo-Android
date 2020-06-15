@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    tools:context=".Tabs.Contact.ContactFragment">
+
+    <TextView
+        android:id="@+id/lblContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- İLETİŞİM - "
+        android:textAllCaps="true"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linearContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:background="@drawable/custom_edit_text_layout"
+                android:ems="10"
+                android:hint="Adınız Soyadınız"
+                android:inputType="text|textVisiblePassword"
+                android:maxLength="25"
+                android:paddingLeft="10dp"
+                android:paddingRight="30dp"
+                android:textColorHint="@color/nav_view_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/lblName"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:gravity="end|center"
+                android:paddingRight="5dp"
+                android:text="25" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:paddingRight="30dp"
+                android:background="@drawable/custom_edit_text_layout"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="text|textVisiblePassword"
+                android:maxLength="50"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/nav_view_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/lblEmail"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:gravity="end|center"
+                android:paddingRight="5dp"
+                android:text="50" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtSubject"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edit_text_layout"
+                android:hint="Konu..."
+                android:inputType="textMultiLine|textVisiblePassword"
+                android:lines="5"
+                android:maxLength="500"
+                android:paddingLeft="10dp"
+                android:paddingRight="30dp"
+                android:textColorHint="@color/nav_view_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/lblSubject"
+                android:layout_width="300dp"
+                android:layout_height="105dp"
+                android:gravity="end|bottom"
+                android:paddingRight="5dp"
+                android:text="500" />
+
+        </RelativeLayout>
+
+        <com.asocialfingers.kachestvo.Utils.Button.CustomAnimatedButton
+            android:id="@+id/btnSend"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_modal_button_dark"
+            android:text="Gonder"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>

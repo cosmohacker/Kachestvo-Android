@@ -1,0 +1,23 @@
+<resources>
+
+    <!--  App Name  -->
+    <string name="app_name">Kachestvo</string>
+    <!---->
+
+    <!--  Tab Names  -->
+    <string name="tab_name_hakkimizda">Hakkımızda</string>
+    <string name="tab_name_yorum">Yorumlarım</string>
+    <string name="tab_name_anasayfa">Anasayfa</string>
+    <string name="tab_name_iletisim">İletişim</string>
+    <string name="tab_name_extra">Ekstra</string>
+    <string name="tab_text_tema">Tema</string>
+    <!---->
+
+    <string name="comment_text_send">Gönder</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="just_black_slogan">\" WE ARE NOT THE SAME \"</string>
+    <string name="asocial_fingers">aSocial_Fingers</string>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/homeTab">
+
+    <fragment
+        android:id="@+id/actionMain"
+        android:label="Home"
+        tools:layout="Main">
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeTab"
+        android:name="com.asocialfingers.kachestvo.Tabs.Home.HomeFragment"
+        android:label="Anasayfa"
+        tools:layout="@layout/fragment_home">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/extraTab"
+        android:name="com.asocialfingers.kachestvo.Tabs.Extra.ExtraFragment"
+        android:label="Ekstra"
+        tools:layout="@layout/fragment_extra" />
+
+    <fragment
+        android:id="@+id/contactTab"
+        android:name="com.asocialfingers.kachestvo.Tabs.Contact.ContactFragment"
+        android:label="İletişim"
+        tools:layout="@layout/fragment_contact" />
+
+    <fragment
+        android:id="@+id/aboutTab"
+        android:name="com.asocialfingers.kachestvo.Tabs.About.AboutFragment"
+        android:label="Hakkımızda"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/commentTab"
+        android:name="com.asocialfingers.kachestvo.Tabs.About.AboutFragment"
+        android:label="Yorumlarım"
+        tools:layout="@layout/fragment_comments" />
+
+</navigation>

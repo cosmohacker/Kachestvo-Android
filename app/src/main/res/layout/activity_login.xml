@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_background"
+    tools:context=".Admin.LoginActivity">
+
+    <ImageButton
+        android:id="@+id/imgBack"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_back_login"/>
+
+    <LinearLayout
+        android:id="@+id/layoutLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="200dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/lblLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - LOGIN - "
+            android:textColor="@color/login_text_color"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutUsername"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/login_text_color"
+            android:textColorHighlight="@color/login_text_color"
+            android:textColorHint="@color/login_hint_color"
+            android:textColorLink="@color/login_text_color"
+            android:textCursorDrawable="@null"
+            app:counterTextColor="@color/login_text_color"
+            app:hintTextColor="@color/login_text_color">
+
+            <EditText
+                android:id="@+id/txtUsername"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblLogin"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/login_text_color"
+                android:cursorVisible="true"
+                android:drawableStart="@drawable/ic_username"
+                android:drawablePadding="10dp"
+                android:hint="Username"
+                android:inputType="text|textVisiblePassword"
+                android:saveEnabled="true"
+                android:soundEffectsEnabled="true"
+                android:textColor="@color/login_text_color"
+                android:textCursorDrawable="@null" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/login_text_color"
+            android:textColorHighlight="@color/login_text_color"
+            android:textColorHint="@color/login_hint_color"
+            android:textColorLink="@color/login_text_color"
+            android:textCursorDrawable="@null"
+            app:counterTextColor="@color/login_text_color"
+            app:hintTextColor="@color/login_text_color"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/login_text_color">
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/login_text_color"
+                android:cursorVisible="true"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:saveEnabled="true"
+                android:soundEffectsEnabled="true"
+                android:textColor="@color/login_text_color"
+                android:textCursorDrawable="@null" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/login_text_color"
+            android:text="OK"
+            android:textColor="@color/login_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/just_black_slogan"
+            android:textColor="@color/login_text_color"
+            android:translationY="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/asocial_fingers"
+            android:textColor="@color/login_text_color"
+            android:translationY="50dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgFlexy"
+        android:layout_width="250dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_login_opening" />
+
+</RelativeLayout>

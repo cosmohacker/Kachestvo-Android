@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_modal_corners_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageButton
+        android:id="@+id/imgClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/close_modal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Yorum Yap"
+        android:textColor="@color/text_colors_dark"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtNameSurname"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:background="@drawable/custom_edit_text_layout"
+            android:ems="10"
+            android:hint="Adınız Soyadınız"
+            android:inputType="text|textVisiblePassword"
+            android:maxLength="25"
+            android:paddingLeft="10dp"
+            android:paddingRight="30dp"
+            android:textColorHint="@color/nav_view_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtNameSurnameCounter"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:gravity="end|center"
+            android:paddingRight="5dp"
+            android:text="25" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtComment"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edit_text_layout"
+            android:hint="Yorumunuz..."
+            android:inputType="textMultiLine|textVisiblePassword"
+            android:lines="5"
+            android:maxLength="350"
+            android:paddingRight="30dp"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/nav_view_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtCommentCounter"
+            android:layout_width="300dp"
+            android:layout_height="105dp"
+            android:gravity="end|bottom"
+            android:paddingRight="5dp"
+            android:text="350" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_modal_button_dark"
+        android:text="@string/comment_text_send"
+        android:textAllCaps="false" />
+
+</LinearLayout>
