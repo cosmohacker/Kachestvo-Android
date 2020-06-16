@@ -1,13 +1,16 @@
 package com.asocialfingers.kachestvo.Utils.Connection;
 
 public class ConnectionLinks {
-    public static String previousSlide = "http://192.168.1.36/kachestvo/presentation/previous";
+    
+    static String ipAddress = "your_ip_address";
+    
+    public static String previousSlide = "http://" + ipAddress + "/kachestvo/presentation/previous";
 
-    public static String insertComment = "http://192.168.1.36/kachestvo/comments/insert";
+    public static String insertComment = "http://" + ipAddress + "/kachestvo/comments/insert";
 
-    public static String nextSlide = "http://192.168.1.36/kachestvo/presentation/next";
+    public static String nextSlide = "http://" + ipAddress + "/kachestvo/presentation/next";
 
-    public static String getComment = "http://192.168.1.36/kachestvo/comments";
+    public static String getComment = "http://" + ipAddress + "/kachestvo/comments";
 
-    public static String sendMail = "http://192.168.1.36/kachestvo/email/send";
+    public static String sendMail = "http://" + ipAddress + "/kachestvo/email/send";
 }
